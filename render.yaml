@@ -7,3 +7,7 @@ services:
     autoDeploy: true
     buildCommand: "./mvnw clean package -DskipTests"
     startCommand: "java -jar target/agenda-0.0.1-SNAPSHOT.jar"
+    buildFilter:
+      paths:
+        - "pom.xml"
+        - "src/**"
